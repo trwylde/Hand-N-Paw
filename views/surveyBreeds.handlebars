@@ -1,0 +1,100 @@
+<main class="Site-content">  
+    <div class="container z-depth-5">
+      <div class="card-panel deep-purple white-text">
+        <div class="card-content white-text center">
+          <h2><i class="small material-icons prefix white-text">format_list_numbered</i>  What's your ideal dog like?</h2>
+          <hr>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container z-depth-5 center">
+        <div class="card-panel deep-purple white-text">
+          <div class="card-content white-text center">
+          </div>
+          <div class="card teal white-text">
+            <div class="card-content">
+
+              <h3>Which statement best describes your home?</h3>
+                <div class="input-field col s10">
+                  <select class="select" id="q1">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">I'll be honest, it's tight.</option>
+                    <option value="2">Not a mansion, but plenty of elbow room.</option>
+                    <option value="3">I sometimes get lost on my way to the kitchen.</option>
+                  </select>
+                </div>
+
+              <h3>Tell us about your yard?</h3>
+                <div class="input-field col s10">
+                  <select class="select" id="q2">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Yard? There's a park nearby.</option>
+                    <option value="2">I've got enough greenspace to play catch.</option>
+                    <option value="3">Sometimes I confuse it with a golf course.</option>
+                  </select>
+                </div>
+            
+                <h3>Are there young children in your home?</h3>
+                  <div class="input-field col s10">
+                    <select class="select" id="q3">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">This is an adult space.</option>
+                      <option value="2">Not right now, but hopefully in the future.</option>
+                      <option value="3">Yes, we have a growing family.</option>
+                    </select>
+                  </div>
+            
+                <h3>When meeting people outside of your social circle your motto is...?</h3>
+                  <div class="input-field col s10">
+                    <select class="select" id="q4">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">"Stranger danger."</option>
+                      <option value="2">"Cordial, but cautious."</option>
+                      <option value="3">"A stranger is just a friend I haven't met yet."</option>
+                    </select>
+                  </div>
+            
+                <h3>Are there other animals in your family?</h3>
+                  <div class="input-field col s10">
+                    <select class="select" id="q5">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="0">"One is enough."</option>
+                      <option value="1">"Call me Old McDonald."</option>
+                    </select>
+                  </div>            
+                <br>
+                <br>
+  
+            </div>  <!--CLoses Card Content-->
+          </div>
+          <button class="btn-large waves-effect waves-light teal accent-4" type="submit" name="action" id="submit">Submit<i class="material-icons right">send</i></button>
+        </div>
+      </div> <!-- closes container -->
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/breeds">Breeds List</a></p>
+        </div>
+      </footer>
+    </main> <!--Don't Lose THIS TAG-->
+  
+        <!-- Modal Structure -->
+    <div id="resultsModal" class="modal deep-purple lighten-1 white-text">
+      <div class="modal-content center">
+        <div class="card teal white-text z-depth-5 center">
+          <h4>Best Match</h4>
+          <hr>
+          <h2 id="matchName"></h2>
+          <h4 id="temperment"></h4>
+          <img id="matchImage" class="responsive-img" width="350" src="" alt="">
+          <br>
+          <h5 id="about"></h5>
+        </div>
+      </div>
+        <div class="modal-footer teal">
+          <a class="waves-effect waves-light btn modal-close"><i class="material-icons left">close</i>Close</a>
+        </div>
+      </div>
+  
+    
+
