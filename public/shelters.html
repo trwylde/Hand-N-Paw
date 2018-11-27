@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hand 'N Paw - Shelter Search</title>
+  
+  <!--BootStrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="assets/images/hand-n-paw-logo.png">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/shelters.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4 text-white">Welcome to Hand 'N Paw</h1>
+    <h3 class="text-white">Connecting dog lovers to furry friends in need!</h3>
+  </div>
+
+  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">Search for Shelters in Your Area</div>
+    <div class="card-body">
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="testing" placeholder="Zip Code">
+          </div>
+                              
+          <div class="col-auto">
+            <button type="submit" id="zipsub" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card bg-dark text-white" style="max-width: 40rem;">
+      <div id="shelterResults"></div>
+    </div>
+  </div>
+
+</body>
