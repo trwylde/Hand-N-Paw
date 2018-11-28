@@ -96,4 +96,4 @@ INSERT INTO breeds (breed_name, size, outdoor_space, child_safe, sociable, multi
 VALUES ("Cairn Terrier", "1", "1", "3", "1", true, false, "2", "3");
 USE breeds_db;
 INSERT INTO breeds (breed_name, size, outdoor_space, child_safe, sociable, multi_animal_safe, health_issues, shed_factor, exercise_needs)
-VALUES ("Shetland Sheepdog / Sheltie", "2", "2", "3", "2", true, true, "2", "2");1
+VALUES ("Shetland Sheepdog / Sheltie", "2", "2", "3", "2", true, true, "2", "2");
