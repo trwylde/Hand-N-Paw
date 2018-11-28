@@ -6,78 +6,88 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hand 'N Paw</title>
 
-    <!--BootStrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="assets/images/hand-n-paw-logo.png">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--BootStrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="../public/assets/images/hand-n-paw-logo.png">
+  <link rel="stylesheet" href="../public/assets/styles/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
  
   <div class="jumbotron">
+    <img id="logo" src="../public/assets/images/hand-n-paw-logo.png" alt="">
     <h1 class="display-4 text-white">Welcome to Hand 'N Paw</h1>
     <h3 class="text-white">Connecting dog lovers to furry friends in need!</h3>
   </div>
 
   <div class="container">
     <div class="card bg-dark text-white pg-options">
-      <img class="card-img" src="images/matthew-henry-58760-unsplash.jpg" alt="Card image">
+      <img class="card-img" src="../public/assets/images/matthew-henry-58760-unsplash.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="card-title">Search for Shelters in Your Area</h3>
+          <p class="card-title link-title">Search for Shelters in Your Area</p>
           <a href="shelters.html" class="btn btn-info">Find a Local Shelter</a>
           <br>
           <br>
-          <p class="card-text">You can't buy love, but you can adopt it from a shelter.</p>
-          <p>To adopt a dog, is to save a life.</p>
+          <p class="card-text d-none d-md-block link-description">You can't buy love, but you can adopt it from a shelter.</p>
+          <p class="card-text d-none d-md-block link-description">To adopt a dog, is to save a life.</p>
         </div>
       </div>
     </div>
     <br>
     <div class="card bg-dark text-white pg-options">
-      <img class="card-img" src="images/matthew-henry-64794-unsplash.jpg" alt="Card image">
+      <img class="card-img" src="../public/assets/images/matthew-henry-64794-unsplash.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="card-title">Looking to Add to Your Family?</h3>
+          <p class="card-title link-title" class="card-title">Looking to Add to Your Family?</p>
           <a href="pet-find.html" class="btn btn-info">Find Your Perfect Match</a>
           <br>
           <br>
-          <p class="card-text">There's a dog for every family... and vice-versa.</p>
-          <p>Tell us about the dog you're looking for and find your perfect fit.</p>
+          <p class="card-text d-none d-md-block link-description">There's a dog for every family... and vice-versa.</p>
+          <p class="card-text d-none d-md-block link-description">Tell us about the dog you're looking for and find your perfect fit.</p>
         </div>
       </div>
     </div>
     <br>
     <div class="card bg-dark text-white pg-options">
-      <img class="card-img" src="images/ideal-breed-survey.jpg" alt="Card image">
+      <img class="card-img" src="../public/assets/images/ideal-breed-survey.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="card-title">Take a Survey to Find Your Ideal Breed</h3>
-          <a href="survey.html" class="btn btn-info">What's Your Ideal Breed</a>
+          <p class="card-title link-title">Take a Survey to Find Your Ideal Breed</p>
+          <a href="surveyBreeds.handlebars" class="btn btn-info">What's Your Ideal Breed</a>
           <br>
           <br>
-          <p class="card-text">In other words, if you were a dog...</p>
-          <p>What breed would you be?</p>
+          <p class="card-text d-none d-md-block link-description">In other words, if you were a dog...</p>
+          <p class="card-text d-none d-md-block link-description">What breed would you be?</p>
         </div>
       </div>
     </div>
     <br>
     <div class="card bg-dark text-white pg-options">
-      <img class="card-img" src="images/blog.jpg" alt="Card image">
+      <img class="card-img" src="../public/assets/images/blog.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="card-title">Dog Adoption is More than a Notion</h3>
-          <a href="#" class="btn btn-info">Read Our Blog</a>
+          <p class="card-title link-title">Dog Adoption is More than a Notion</p>
+          <a href="newsletter.handlebars" class="btn btn-info">Stay in Touch</a>
           <br>
           <br>
-          <p class="card-text">There's a dog for every family... and vice-versa.</p>
-          <p>Tell us about the dog you're looking for and find your perfect fit.</p>
+          <p class="card-text d-none d-md-block link-description">Join the Hand 'N Paw Community, recieve our newsletter, and hear from others</p>
+          <p class="card-text d-none d-md-block link-description">who are saving the world, one rescue at a time.</p>
         </div>
       </div>
     </div>
 
   </div> <!--Closes Container-->
+
+  <div class="footer-margin"> 
+    <footer class="footer-font-style text-info footer-position">
+      <span>
+      <img id="footer-logo" src="../public/assets/images/hand-n-paw-logo-footer.png" alt="" style="max-width: 12rem;">
+      <p id="by-line">This site was created by the Hand 'N Paw Team: Mani, Ian & Timber</p>
+    </span>
+    </footer>
+  </div>
 
 </body>
 </html>

@@ -2,7 +2,8 @@
   line-height: 2.5;
 }
 body {
-  background-color: #343a40;
+  background-color: #E9ECEF;
+  background-image: url("../images/rawpixel-666934-unsplash.jpg");
 }
 .jumbotron {
   background-color: rgba(248, 243, 85, 0);
@@ -17,49 +18,36 @@ body {
   float: none; /* Added */
   margin-bottom: 10px; /* Added */
 }
-/* #shelterResults {
-  text-align: center;
-/* padding-left: 35px;
-border-radius: 5px; */
+#logo {
+  margin: 0;
+  padding: 0;
 }
-/* 
-.jumbotron {
-  text-align: center;
+footer {
+  background-color: rgba(248, 243, 85, 0);
+  opacity: .7;
+  height: 40px;
 }
-
-.searchBar {
-  text-align: center;
-}  */
-/* .imagebox {
-  background: black;
-  padding: 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
+#footer-logo {
+  max-width: 90px !important;
 }
-
-.imagebox img {
-  opacity: 1;
-  transition: 0.5s opacity;
+.link-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black, 0 0 25px rgb(42, 42, 156), 0 0 5px darkblue;
 }
-
-.imagebox .imagebox-desc {
-  background-color: rgba(0, 0, 0, 0.6);
-  bottom: 0px;
-  color: white;
-  font-size: 1.2em;
-  left: 0px;
-  padding: 10px 15px;
-  position: absolute;
-  transition: 0.5s padding;
-  text-align: center;
-  width: 100%;
+#by-line {
+  font-size: 24px;
+  text-shadow: 1px 1px 3px #1a0111;
 }
-
-.imagebox:hover img {
-  opacity: 0.7;
+.link-description {
+  font-size: 24px;
+  text-shadow: 1px 1px 3px #1a0111;
 }
-
-.imagebox:hover .imagebox-desc {
-  padding-bottom: 10%;
-} */
+@media (max-width: 480px) {
+  .link-title {
+    font-size: 20px;
+  }
+  .card-body {
+    padding: .75rem; 
+  }
+ }
