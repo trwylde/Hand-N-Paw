@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS breeds_db;
 CREATE DATABASE breeds_db;
 USE breeds_db;
 
@@ -9,7 +10,7 @@ CREATE TABLE breeds(
  child_safe INT NOT NULL,          -- Do they, ideally, need to be socialized (with small children) from birth? (scale of 1-3)
  sociable INT NOT NULL,            -- Are they suspicious (1), merely cautious (2), or open with strangers(3)?
  multi_animal_safe BOOLEAN DEFAULT false,   -- Can/should they be added to a home that has other animals living there? (T/F)
- health_isuues BOOLEAN DEFAULT false, --Are there major health issues common to the breed
+ health_issues BOOLEAN DEFAULT false, -- Are there major health issues common to the breed
  shed_factor INT NOT NULL,          -- How much does this breed shed?
  exercise_needs INT NOT NULL,       -- How much daily exercise is required?
  PRIMARY KEY (id)
