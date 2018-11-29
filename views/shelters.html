@@ -8,8 +8,10 @@
   
   <!--BootStrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/png" href="../public/assets/images/hand-n-paw-logo.png">
-  <link rel="stylesheet" href="../public/assets/styles/styles.css">
+  <link rel="shortcut icon" type="image/png" href="assets/images/hand-n-paw-logo.png">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/shelters.js"></script>
@@ -17,23 +19,24 @@
 <body>
 
   <div class="jumbotron">
-    <img src="../public/assets/images/hand-n-paw-logo.png" alt="">
-    <h1 class="display-4 text-white">Hand 'N Paw</h1>
-    <h3 class="text-white">Connecting dog lovers to furry friends in need!</h3>
+    <img src="assets/images/hand-n-paw-logo.png" alt="">
+    <h1 class="display-4 text-white welcome-banner">Hand 'N Paw</h1>
+    <h3 class="text-white welcome-banner">Connecting dog lovers to furry friends in need!</h3>
   </div>
 
-  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-    <div class="card-header">Search for Shelters in Your Area</div>
+  <div class="card text-white mb-3 search-card" style="max-width: 32rem;">
+    <div class="card-header text-center"><h3>Search for Shelters in Your Area</h3></div>
     <div class="card-body">
       <form>
-        <div class="form-row align-items-center">
+        <div class="row justify-content-md-center">
           <div class="col-auto">
-            <label class="sr-only" for="inlineFormInput">Name</label>
-            <input type="text" class="form-control mb-2" id="testing" placeholder="Zip Code">
+            <label class="sr-only" for="zipCode">Zip Code</label>
+            <input type="text" class="form-control mb-2" id="shelter-zip-code" placeholder="Zip Code">
           </div>
-                              
-          <div class="col-auto">
-            <button type="submit" id="zipsub" class="btn btn-primary mb-2">Submit</button>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col" style="max-width: 6rem;">
+            <button type="submit" id="zipsub" class="btn btn-secondary">Submit</button>
           </div>
         </div>
       </form>
@@ -41,17 +44,18 @@
   </div>
 
   <div class="container">
-    <div class="card bg-dark text-white" style="max-width: 40rem;">
+    <div id="shelter-card" class="card text-white bg-secondary align-items-center shelter-card" style="max-width: 60rem;">
       <div id="shelterResults"></div>
     </div>
   </div>
 
   <div class="footer-margin"> 
-    <footer class="footer-font-style text-info footer-position">
+    <footer class="footer-font-style footer-position">
       <span>
-      <img id="footer-logo" src="../public/assets/images/hand-n-paw-logo-footer.png" alt="" style="max-width: 12rem;">
+      <img id="footer-logo" src="assets/images/hand-n-paw-logo-footer.png" alt="" style="max-width: 12rem;">
       <p id="by-line">This site was created by the Hand 'N Paw Team: Mani, Ian & Timber</p>
      </span>
     </footer>
   </div>
 </body>
+</html>
