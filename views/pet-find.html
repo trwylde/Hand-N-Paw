@@ -27,106 +27,45 @@
   <div class="card text-white mb-3 search-card" style="max-width: 38rem;">
     <div class="card-header text-center"><h3>Tell us about the dog you're looking for</h3></div>
     <div class="card-body">
-<!-- 
+      <form>
+        <div class="form-group align-items-center">
 
-        <form>
-            <div class="form-group align-items-center">
-
-                <label class="sr-only" for="dogBreed">Breed</label>
-                <select class="form-control" id="breed">
-                  <option value="" disabled selected>What breed of dog are you interested in?</option>
-                  <option value="">Any</option>
-                  <option value="Boxer">Boxer</option>
-                  <option value="Black Labrador Retriever">Black Labrador</option>
-                  <option value="Labrador Retriever">Labrador Retriever</option>
-                  <option value="Rottweiler">Rottweiler</option>
-                </select>
-                <br>
-                <label class="sr-only" for="dogSize">Size</label>
-                <select class="form-control" id="gender">
-                  <option value="" disabled selected>What size dog are you interested in?</option>
-                  <option value="">Any</option>
-                  <option value="S">Small</option>
-                  <option value="M">Medium</option>
-                  <option value="L">Large</option>
-                  <option value="XL">Extra-Large</option>
-                </select>
-                <br>
-                <label class="sr-only" for="dogGender">Gender</label>
-                <select class="form-control" id="gender">
-                  <option value="" disabled selected>Do you have a gender preference?</option>
-                  <option value="">Either</option>
-                  <option value="F">Female</option>
-                  <option value="M">Male</option>
-                </select>
-                <br>
-                <label class="sr-only" for="dogAge">Age</label>
-              <select class="form-control" id="age">
-                <option value="" disabled selected>Do you have an age preference?</option>
-                <option value="">Any</option>
-                <option value="B">Baby</option>
-                <option value="Y">Young</option>
-                <option value="A">Adult</option>
-                <option value="S">Senior</option>
-              </select>
-              <br>
-
-
-              <div class="row justify-content-md-center">
-                  <div class="col-auto">
-                    <label class="sr-only" for="zipCode">Zip Code</label>
-                    <input type="text" class="form-control mb-2" id="zipCode" placeholder="Zip Code">
-                  </div>
-                </div>  
-          
-                <div class="row justify-content-md-center">
-                  <div class="col" style="max-width: 6rem;">
-                    <button type="submit" id="submitDogSearch" class="btn btn-secondary">Submit</button>
-                  </div>
-                </div>
-
+          <div class="row justify-content-md-center">
+            <div class="col-8" style="max-width: 28rem;">
+              <label class="sr-only" for="dogGender">Gender</label>
+              <input type="text" class="form-control mb-2" id="gender" placeholder="M (Male), F (Female)">
             </div>
-          </form> -->
+          </div> 
 
-    <form>
-      <div class="form-group align-items-center">
-
-        <div class="row justify-content-md-center">
-          <div class="col-8" style="max-width: 28rem;">
-            <label class="sr-only" for="dogGender">Gender</label>
-            <input type="text" class="form-control mb-2" id="gender" placeholder="M (Male), F (Female)">
+          <div class="row justify-content-md-center">
+            <div class="col-8">
+              <label class="sr-only" for="dogSize">Size</label>
+              <input type="text" class="form-control mb-2" id="size" placeholder="S (Small), M (Medium), L (Large), XL (Extra-Large)">
+            </div>
           </div>
-        </div> 
+          
+        <div class="row justify-content-md-center">
+          <div class="col-8">
+            <label class="sr-only" for="dogAge">Age</label>
+            <input type="text" class="form-control mb-2" id="age" placeholder="Baby, Young, Adult, Senior">
+          </div>
+        </div>  
 
         <div class="row justify-content-md-center">
           <div class="col-8">
-            <label class="sr-only" for="dogSize">Size</label>
-            <input type="text" class="form-control mb-2" id="size" placeholder="S (Small), M (Medium), L (Large), XL (Extra-Large)">
+            <label class="sr-only" for="zipCode">Zip Code</label>
+            <input type="text" class="form-control mb-2" id="zipCode" placeholder="Zip Code">
+          </div>
+        </div>  
+
+        <div class="row justify-content-md-center">
+          <div class="col" style="max-width: 6rem;">
+            <button type="submit" id="submitDogSearch" class="btn btn-secondary">Submit</button>
           </div>
         </div>
         
-       <div class="row justify-content-md-center">
-        <div class="col-8">
-          <label class="sr-only" for="dogAge">Age</label>
-          <input type="text" class="form-control mb-2" id="age" placeholder="Baby, Young, Adult, Senior">
-        </div>
-      </div>  
-
-      <div class="row justify-content-md-center">
-        <div class="col-8">
-          <label class="sr-only" for="zipCode">Zip Code</label>
-          <input type="text" class="form-control mb-2" id="zipCode" placeholder="Zip Code">
-        </div>
-      </div>  
-
-      <div class="row justify-content-md-center">
-        <div class="col" style="max-width: 6rem;">
-          <button type="submit" id="submitDogSearch" class="btn btn-secondary">Submit</button>
-        </div>
-      </div>
-      
-      </div> 
-    </form>
+        </div> 
+      </form>
     </div>
   </div>
 
