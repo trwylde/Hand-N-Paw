@@ -78,6 +78,7 @@ footer {
 .pet-card {
   background-color: rgba(248, 243, 85, 0);
   opacity: .7;
+  max-width: 300px;
 }
 .dog-name {
   font-size: 30px;

@@ -22,7 +22,7 @@ $(document).ready(function() {
           console.log(dogs.pet[i].name.$t);
 
           var dogInfo = 
-            `<div class="card pet-card border-info bg-secondary" style="max-width:25rem;">
+            `<div class="card pet-card border-info bg-secondary">
               <img class="img-thumbnail" src="${dogs.pet[i].media.photos.photo[3].$t}" alt="Card image cap">
               <div class="card-body text-white text-center">
                 <h4 class="dog-name" class="card-title">${dogs.pet[i].name.$t}</h5>
