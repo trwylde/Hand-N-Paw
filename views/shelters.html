@@ -24,22 +24,31 @@
     <h3 class="text-white welcome-banner">Connecting dog lovers to furry friends in need!</h3>
   </div>
 
-  <div class="card text-white mb-3 search-card" style="max-width: 32rem;">
-    <div class="card-header text-center"><h3>Search for Shelters in Your Area</h3></div>
-    <div class="card-body">
-      <form>
-        <div class="row justify-content-md-center">
-          <div class="col-auto">
-            <label class="sr-only" for="zipCode">Zip Code</label>
-            <input type="text" class="form-control mb-2" id="shelter-zip-code" placeholder="Zip Code">
+  <div class="row">
+    <nav class="nav flex-column">
+      <a class="nav-link menu-item" href="petfind">Pet Search</a>
+      <a class="nav-link menu-item" href="/survey">Breed Quiz</a>
+      <a class="nav-link menu-item" href="/newsletter">Newsletter</a>
+      <a class="nav-link menu-item" href="/">Home<img src="assets/images/hand-n-paw-logo.png" width="42" alt=""></a>
+    </nav>
+
+    <div class="card text-white mb-3 search-card" style="max-width: 32rem;">
+      <div class="card-header text-center"><h3>Search for Shelters in Your Area</h3></div>
+      <div class="card-body">
+        <form>
+          <div class="row justify-content-md-center">
+            <div class="col-auto">
+              <label class="sr-only" for="zipCode">Zip Code</label>
+              <input type="text" class="form-control mb-2 validate" id="shelter-zip-code" placeholder="Zip Code *req">
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col" style="max-width: 6rem;">
-            <button type="submit" id="zipsub" class="btn btn-secondary">Submit</button>
+          <div class="row justify-content-md-center">
+            <div class="col" style="max-width: 6rem;">
+              <button type="submit" id="zipsub" class="btn btn-secondary">Submit</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 

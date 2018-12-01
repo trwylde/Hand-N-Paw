@@ -24,48 +24,57 @@
     <h3 class="text-white welcome-banner">Connecting dog lovers to furry friends in need!</h3>
   </div>
 
-  <div class="card text-white mb-3 search-card" style="max-width: 38rem;">
-    <div class="card-header text-center"><h3>Tell us about the dog you're looking for</h3></div>
-    <div class="card-body">
-      <form>
-        <div class="form-group align-items-center">
+  <div class="row">
+    <nav class="nav flex-column">
+      <a class="nav-link menu-item" href="shelters">Shelters</a>
+      <a class="nav-link menu-item" href="/survey">Breed Quiz</a>
+      <a class="nav-link menu-item" href="/newsletter">Newsletter</a>
+      <a class="nav-link menu-item" href="/">Home<img src="assets/images/hand-n-paw-logo.png" width="42" alt=""></a>
+    </nav>
 
-          <div class="row justify-content-md-center">
-            <div class="col-8" style="max-width: 28rem;">
-              <label class="sr-only" for="dogGender">Gender</label>
-              <input type="text" class="form-control mb-2" id="gender" placeholder="M (Male), F (Female)">
+    <div class="card text-white mb-3 search-card" style="max-width: 38rem;">
+      <div class="card-header text-center"><h3>Tell us about the dog you're looking for</h3></div>
+      <div class="card-body">
+        <form>
+          <div class="form-group align-items-center">
+
+            <div class="row justify-content-md-center">
+              <div class="col-8" style="max-width: 28rem;">
+                <label class="sr-only" for="dogGender">Gender</label>
+                <input type="text" class="form-control mb-2" id="gender" placeholder="M (Male), F (Female)">
+              </div>
+            </div> 
+
+            <div class="row justify-content-md-center">
+              <div class="col-8">
+                <label class="sr-only" for="dogSize">Size</label>
+                <input type="text" class="form-control mb-2" id="size" placeholder="S (Small), M (Medium), L (Large), XL (Extra-Large)">
+              </div>
             </div>
-          </div> 
+            
+          <div class="row justify-content-md-center">
+            <div class="col-8">
+              <label class="sr-only" for="dogAge">Age</label>
+              <input type="text" class="form-control mb-2" id="age" placeholder="Baby, Young, Adult, Senior">
+            </div>
+          </div>  
 
           <div class="row justify-content-md-center">
             <div class="col-8">
-              <label class="sr-only" for="dogSize">Size</label>
-              <input type="text" class="form-control mb-2" id="size" placeholder="S (Small), M (Medium), L (Large), XL (Extra-Large)">
+              <label class="sr-only" for="zipCode">Zip Code</label>
+              <input type="text" class="form-control mb-2" id="zipCode" placeholder="Zip Code">
+            </div>
+          </div>  
+
+          <div class="row justify-content-md-center">
+            <div class="col" style="max-width: 6rem;">
+              <button type="submit" id="submitDogSearch" class="btn btn-secondary">Submit</button>
             </div>
           </div>
           
-        <div class="row justify-content-md-center">
-          <div class="col-8">
-            <label class="sr-only" for="dogAge">Age</label>
-            <input type="text" class="form-control mb-2" id="age" placeholder="Baby, Young, Adult, Senior">
-          </div>
-        </div>  
-
-        <div class="row justify-content-md-center">
-          <div class="col-8">
-            <label class="sr-only" for="zipCode">Zip Code</label>
-            <input type="text" class="form-control mb-2" id="zipCode" placeholder="Zip Code">
-          </div>
-        </div>  
-
-        <div class="row justify-content-md-center">
-          <div class="col" style="max-width: 6rem;">
-            <button type="submit" id="submitDogSearch" class="btn btn-secondary">Submit</button>
-          </div>
-        </div>
-        
-        </div> 
-      </form>
+          </div> 
+        </form>
+      </div>
     </div>
   </div>
 

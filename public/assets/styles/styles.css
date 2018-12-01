@@ -1,3 +1,7 @@
+/* font-family: 'Mali', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Handlee', cursive; */
+
 .list-group-item {
   line-height: 2.5;
 }
@@ -46,12 +50,16 @@ footer {
   text-shadow: 2px 2px 4px black, 0 0 25px rgb(42, 42, 156), 0 0 5px darkblue;
 }
 #by-line {
+  font-family: 'Patrick Hand', cursive;
   font-size: 24px;
-  text-shadow: 1px 1px 3px #1a0111;
+  font-weight: 800;
+  text-shadow: 2px 2px 3px #1a0111;
 }
 .link-description {
-  font-size: 24px;
-  text-shadow: 1px 1px 3px #1a0111;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px #1a0111;
 }
 .search-card {
   background-color: #20C997;
@@ -70,7 +78,8 @@ footer {
 }
 .shelter-location,
 .shelter-info {
-  font-size: 24px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 28px;
   text-shadow: 1px 1px 3px #1a0111;
 }
 
@@ -78,6 +87,7 @@ footer {
 .pet-card {
   background-color: rgba(248, 243, 85, 0);
   opacity: .7;
+  max-width: 300px;
 }
 .dog-name {
   font-size: 30px;
@@ -88,6 +98,14 @@ footer {
 .dog-gender,
 .dog-breed {
   font-size: 24px;
+  text-shadow: 1px 1px 3px #1a0111;
+}
+
+/* Side Nav */
+.menu-item {
+  color: #6F42C1 !important;
+  font-weight: 800;
+  font-size: 30px;
   text-shadow: 1px 1px 3px #1a0111;
 }
 
