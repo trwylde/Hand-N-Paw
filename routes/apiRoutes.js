@@ -14,11 +14,11 @@ module.exports = function(app) {
     //console.log(req.query);
      //breeds.selectBreed(req.body.q1,req.body.q2,req.body.q3,req.body.q4,req.body.q5,function(data) {
      breeds.selectBreed(req.query.q1,req.query.q2,req.query.q3,req.query.q4,req.query.q5,req.query.q6,req.query.q7,req.query.q8,function(data) {    
-      console.log("am i here?");
+      if(data[0]){
       console.log(data[0].id);
       res.json({id: data[0].id});
       // return data;
-     
+     }
     });
   });
 
