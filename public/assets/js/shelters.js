@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  var devkey = "c2557dfbaaf18789923aa6e8aa40ced3"
 
   console.log("ready");
   $("#zipsub").on("click", function(event) {
@@ -18,7 +17,8 @@ $(document).ready(function() {
     if (validateZip() == true) {
 
       $.ajax({
-        url: "https://cors-anywhere.herokuapp.com/http://api.petfinder.com/shelter.find?key=" + devkey + "&location=" + zipcode + "&format=json",
+        // url: "https://cors-anywhere.herokuapp.com/http://api.petfinder.com/shelter.find?key=" + devkey + "&location=" + zipcode + "&format=json",
+        url: "/api/getshelter/" + zipcode,
         method: "GET",
         success: function(data, status) {
           console.log(data.petfinder.shelters.shelter);

@@ -1,4 +1,5 @@
 var breeds = require("../models/breeds.js");
+var request = require("request");
 
 module.exports = function(app) {
   // // Get all examples
@@ -7,6 +8,25 @@ module.exports = function(app) {
   //     res.json(dbExamples);
   //   });
   // });
+  app.get("/api/getshelter/:zipcode", function(req, res) {
+    var devkey = process.env.PETFINDER_KEY;
+    var zipcode = req.params.zipcode;
+    request("http://api.petfinder.com/shelter.find?key=" + devkey + "&location=" + zipcode + "&format=json", function(error, response, body){
+    res.json(JSON.parse(body));
+    });
+  });
+
+  app.get("/api/getdogs/:zipcode/:size/:age/:gender", function(req, res) {
+    var devkey = process.env.PETFINDER_KEY;
+    var zipcode = req.params.zipcode;
+    var size = req.params.size;
+    var age = req.params.age;
+    var gender = req.params.gender;
+    request("http://api.petfinder.com/pet.find?key=" + devkey + "&animal=dog&location=" + zipcode + "&sex=" + gender + "&age=" + age + "&size=" + size + "&format=json", function(error, response, body){
+    res.json(JSON.parse(body));
+    });
+  });
+
 
   // Create a new example
   app.get("/api/survey", function(req, res) {

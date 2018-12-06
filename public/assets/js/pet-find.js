@@ -21,10 +21,12 @@ $(document).ready(function() {
     }
     if (validateZip() == true) {
 
-    $.ajax({
-      url: "https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.find?key=" + devkey + "&animal=dog&location=" + zip + "&sex=" + gender + "&size=" + size + "&age=" + age + "&format=json",
+    $.ajax( {
+      // url: "https://cors-anywhere.herokuapp.com/http://api.petfinder.com/pet.find?key=" + devkey + "&animal=dog&location=" + zip + "&sex=" + gender + "&size=" + size + "&age=" + age + "&format=json",
+      url: "/api/getdogs/" + zip + "/" + size + "/" + age + "/" + gender,
       method: "GET",
       success: function(data, status) {
+        console.log(data);
         var dogs = data.petfinder.pets;
         console.log(data.petfinder.pets.pet);
 
